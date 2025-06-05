@@ -15,3 +15,12 @@ exports.scanBarcode = function (options, successCallback, errorCallback) {
 
     exec(successCallback, errorCallback, 'OSBarcode', 'scanBarcode', args);
 }
+
+exports.testMethod = function (options, successCallback, errorCallback) {
+    options = options || {};
+
+
+    let args = null
+
+    exec(successCallback, errorCallback, 'OSBarcode', 'testMethod', args);
+}
